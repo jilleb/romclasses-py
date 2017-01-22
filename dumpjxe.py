@@ -8,8 +8,8 @@ input.close()
 
 def deco(obj, ctx):
   if obj._ptr == 0:
-    print "Obj: " + repr(obj)
-    print "Ctx: " + repr(ctx)
+    print ("Obj: " + repr(obj))
+    print ("Ctx: " + repr(ctx))
   return obj._base + obj._ptr
 
 def Relative(name):
@@ -139,6 +139,6 @@ J9ROMImageHeader = Struct("J9ROMImageHeader",
 ) 
 
 header = J9ROMImageHeader.parse(data)
-print header
+print (header)
 
   
